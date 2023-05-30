@@ -16,5 +16,5 @@ module.exports = function (eleventyConfig) {
 		return isoDate ? `<time datetime="${isoDate}">${isoDate}</time>` : '';
 	});
 	eleventyConfig.setLibrary('md', md);
-	return {dir: {input: 'src'}};
+	return {pathPrefix: 'SCAtlanta.github.io', dir: {input: 'src'}};
 }
